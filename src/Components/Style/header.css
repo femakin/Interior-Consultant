@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Lora&family=Montserrat&family=PT+Serif&display=swap");
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  padding-top: 15px;
+}
+
+body {
+  background-color: #181719;
+}
+
+.logo {
+  width: 103px;
+  height: 31px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logo a {
+  font-family: "Crimson Pro", serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  position: absolute;
+  top: 8px;
+}
+
+.menu {
+  display: none;
+}
+.toggle {
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.menu.active {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 3rem;
+  margin-top: 8rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: 35px;
+  }
+
+  .logo {
+    width: 113px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .logo a {
+    font-family: "Crimson Pro", serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    left: 7px;
+    bottom: 8px;
+  }
+  .menu {
+    display: flex;
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .toggle {
+    display: none;
+  }
+  .menu_items {
+    font-family: "Montserrat", sans-serif;
+    padding-left: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 22px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+}
